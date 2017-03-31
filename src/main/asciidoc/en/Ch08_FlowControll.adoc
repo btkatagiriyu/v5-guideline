@@ -97,7 +97,7 @@ The flow control of job scheduler is strongly dependent on the product specifica
 ====
 In general, parallel/multiple processes of multiple jobs is often implemented by job scheduler and job net. +
 However, in {batch5_shortname}, how to implement parallel and multiple processes of multiple jobs by applying the flow control function, is explained.
-Refer to <<Ch08_ParallelAndMultiple.adoc, "Parallel and multiple process">> for details.
+Refer to <<Ch08_ParallelAndMultiple.adoc#Ch08_ParallelAndMultiple, "Parallel and multiple process">> for details.
 ====
 
 The usage method of this function is same in the chunk model as well as tasklet model.
@@ -117,7 +117,7 @@ By restarting after recovering the cause of failure, it is possible to resume th
 
 [TIP]
 ====
-Refer to <<Ch06_RerunRestart.adoc#Ch06_RerunRestart_HowToUse_Restart, "Restart job">> for how to restart a job.
+Refer to <<Ch06_ReProcessing.adoc#Ch06_RerunRestart_HowToUse_Restart, "Job restart">> for how to restart a job.
 ====
 
 Set sequential flow of the job consisting of 3 steps.
@@ -602,5 +602,5 @@ step2 is not executed after restart, the exit code of job becomes ``NOOP`` and s
 
 To avoid this, "" (empty charactor string) should be assigned in ``exit-code`` as shown above.
 
-Refer to <<"https://jira.spring.io/browse/BATCH-2315", "{SB}/BATCH-2315">> for the details of failure.
+Refer to https://jira.spring.io/browse/BATCH-2315[{SB}/BATCH-2315] for the details of failure.
 ====

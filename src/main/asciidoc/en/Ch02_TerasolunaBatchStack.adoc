@@ -27,7 +27,7 @@ OSS version to be used in {batch5_fullname} as a rule conforms to definition of 
 Note that, version of Spring IO platform in {batch5_version} is
 http://docs.spring.io/platform/docs/Athens-SR2/reference/htmlsingle/[Athens-SR2].+
 For details of Spring IO platform, refer
-http://terasolunaorg.github.io/guideline/5.2.0.RELEASE/jaOverview/FrameworkStack.html#oss[OSS version to be used] of  {server5_fullname}.
+{server5_url}/Overview/FrameworkStack.html#oss[OSS version to be used] of  {server5_fullname}.
 ====
 
 [cols="25,25,25,15,5,5", options="header"]

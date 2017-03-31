@@ -30,13 +30,13 @@ and hence it is determined that the implementation should be appropriately done 
   of job to be referred from  ``JobRepository`` even after stopping Web container.
 
 .Usage scene
-It is same as <<Ch04_AsyncJobWithDB.adoc#Ch04_AsyncJobWithDB_OverView,"Asynchronous execution (DB polling) - Overview">>.
+It is same as <<Ch04_AsyncJobWithDB.adoc#Ch04_AsyncJobWithDB_Overview,"Asynchronous execution (DB polling) - Overview">>.
 
 [TIP]
 .Difference with asynchronous execution (DB polling)
 ====
 On the architecture front, immediacy at the time of asynchronous execution and presence or absence of request management table are different. +
-<<Ch04_AsyncJobWithDB.adoc,"Asynchronous execution (DB polling)">> performs asynchronous execution of multiple jobs registered in the request management table. +
+<<Ch04_AsyncJobWithDB.adoc#Ch04_AsyncJobWithDB,"Asynchronous execution (DB polling)">> performs asynchronous execution of multiple jobs registered in the request management table. +
 On the other hand, this function does not require request management table and accepts asynchronous execution on the Web container instead. +
 It is suitable for a short batch which requires immediacy till the start of the operation in order to execute the operation immediately by sending a Web request.
 ====
@@ -130,7 +130,7 @@ One of the methods of confirmation include using ``JobExplorer`` while checking 
 [[Ch04_AsyncJobWithWeb_Arch_Components]]
 === Application configuration of asynchronous execution (Web container)
 
-The function is same as <<Ch04_AsyncJobWithDB.adoc,"Asynchronous execution (DB polling)">> and use
+The function is same as <<Ch04_AsyncJobWithDB.adoc#Ch04_AsyncJobWithDB,"Asynchronous execution (DB polling)">> and use
 ``async`` and ``AutomaticJobRegistrar`` of Spring profile as a configuration specific to asynchronous execution.
 
 On the other hand, prior knowledge and some specific settings are required in order to use these functions asynchronously (Web container).
@@ -218,7 +218,9 @@ Web/batch development is explained now assuming the use of 2 components below.
 * Web application project by {server5_shortname}
 
 For how to create a batch application project and how to implement a basic job, refer
-<<Ch03_CreateProject.adoc,"How to create a project">> and <<Ch04_AsyncJobWithDB.adoc,"Asynchronous execution (DB polling)">>.
+<<Ch03_CreateProject.adoc#Ch03_CreateProject_HowToCreate,"How to create a project">>,
+<<Ch03_CreateTaskletJob.adoc#Ch03_CreateTaskletJob,"Creation of chunk model job">>,
+<<Ch03_CreateChunkJob.adoc#Ch03_CreateChunkJob, "Creation of tasklet model job">>.
 
 Here, we will focus on starting a batch application from a Web application.
 
@@ -732,7 +734,7 @@ When there are multiple job parameters, they should be separated by using a comm
 Basically the format is as below. +
 ``{Job parameter 1}={Value 1},{Job parameter 2}={Value 2},...``
 
-This is same as the method of specifying job parameters in <<Ch04_AsyncJobWithDB.adoc,"Asynchronous execution (DB polling)">>.
+This is same as the method of specifying job parameters in <<Ch04_AsyncJobWithDB.adoc#Ch04_AsyncJobWithDB,"Asynchronous execution (DB polling)">>.
 ====
 
 [source,java]
@@ -1009,7 +1011,7 @@ Hence, job execution to be targeted must be identified and the status of the job
 When this premise is met, an implementation for stopping and restarting asynchronous executions is explained here.
 
 Further, a method to add job stopping (stop) and restarting (restart) is explained
-for ``JobController`` of <<Ch04_AsyncJobWithWeb_Imprement_Controller, Implementation of controller>>.
+for ``JobController`` of <<Ch04_AsyncJobWithWeb_HowToUse_WebApp_Controller>>.
 
 NOTE: Job stopping and restarting can also be implemented without using ``JobOperator``. +
 For details, refer <<Ch07_JobManagement.adoc#Ch07_JobManagement,Job management>> and identify a method suitable for this objective.
@@ -1100,7 +1102,7 @@ Execution of asynchronous jobs is controlled by external RDBMS so as to connect 
 By sharing an external RDBMS, it is possible to wait for an asynchronous job to be started across the same enclosure or another enclosure.
 
 Applications include load balancing and redundancy for specific jobs.
-However, as described in <<Ch04_AsyncJobWithWeb_HowToUse_WebContainerApp,Web application implementation>>,
+However, as described in <<Ch04_AsyncJobWithWeb_HowToUse_WebApp>>,
 these effects cannot be obtained easily just by starting multiple Web containers or enhancing parallel operations.
 Sometimes measures similar to a general Web application need to be taken in order to obtain the effect.
 An example is given below.

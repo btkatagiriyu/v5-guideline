@@ -351,7 +351,7 @@ $ java org.springframework.batch.core.launch.support.CommandLineJobRunner \
 * For the confirmation method of JobExecutionId, refer to <<Ch07_JobManagement_JobStatusManagement_Retrieve>>.
 * ``JobOpertion#stop()`` can be used to stop the job based on the JobExecutionId. +
 For stopping jobs using ``JobOperation#stop()``,
-refer to <<Ch04_AsyncJobWithWeb.adoc#Ch04_AsyncJobWithWeb_HowToExtend_Stop_And_Restart,"Stop and Restart Async Job">>.
+refer to <<Ch04_AsyncJobWithWebContainer.adoc#Ch04_AsyncJobWithWeb_HowToExtend_Stop_And_Restart,"Stopping and restarting jobs">>.
 ====
 
 [[Ch07_JobManagement_ExitCode]]
@@ -649,7 +649,7 @@ As with logging, message management is basically the same as {server5_shortname}
 ``MessageSource`` can be used to use messages from property files.
 
 * For specific settings and implementation examples,
-  refer to {server5_url}/ja/ArchitectureInDetail/GeneralFuncDetail/Logging.html#id8[Uniform management of log messages]
+  refer to {server5_url}/ArchitectureInDetail/GeneralFuncDetail/Logging.html#id8[Uniform management of log messages]
 
 ** As a sample of log output here, it is exemplified along the case of the Spring MVC controller,
    but please replace it to any component of {SB}.

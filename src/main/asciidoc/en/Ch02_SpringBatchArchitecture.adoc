@@ -179,7 +179,7 @@ A scenario is considered wherein a batch process is started immediately after st
 Figure below shows a process flow from starting a Java process till starting a batch process.
 
 .Process flow from starting a Java process till starting a batch process
-image::Ch02/SpringBatchArchitecture/Ch02_SpringBatchArchitecture_Architecture_LaunchFlow.png[Job Launch Flow]
+image::ch02/SpringBatchArchitecture/Ch02_SpringBatchArchitecture_Architecture_LaunchFlow.png[Job Launch Flow]
 
 .Starting a Java process and starting a Job
 A shell script to start Java is generally described to start a Job defined on {SB}, along with starting a Java process.

@@ -2193,7 +2193,7 @@ public class ReadFooterTasklet implements Tasklet {
 
 |(2)
 |Use ``footerReader`` to read the file with footer record and get the footer information. +
-To use ``ItemReader`` bean defined in implementation class of ``Tasklet``, refer to <<Ch03_CreateTaskletJob.adoc#Ch03_CreateTaskletJob_HowToUse_Impl,Creating a tasklet-oriented job>>
+To use ``ItemReader`` bean defined in implementation class of ``Tasklet``, refer to <<Ch03_CreateTaskletJob.adoc#Ch03_CreateTaskletJob_HowToUse_Implements,Creating a tasklet-oriented job>>
 
 |(3)
 |Get ``jobExecutionContext`` from ``JobExecution``, set the footer information to ``jobExecutionContext`` by key ``footers``.

@@ -49,7 +49,7 @@ handling exception in the framework.
 icon:warning[] In case of <<Ch04_AsyncJobWithDB.adoc#Ch04_AsyncJobWithDB,Asynchronous execution(DB polling)>>
 in the polling process, the validity of the job request is not verified.Therefore, it is desirable that the input check for the request is made in advance by the application that registers the job request.
 
-icon:warning[] In case of <<h04_AsyncJobWithWebContainer.adoc#Ch04_AsyncJobWithWeb,Asynchronous execution(Web container)>>
+icon:warning[] In case of <<Ch04_AsyncJobWithWebContainer.adoc#Ch04_AsyncJobWithWeb,Asynchronous execution(Web container)>>
 It is assumed that the input check for the request is made in advance by the Web application.
 
 Therefore, exception handling is performed in an application that accepts requests or job requests.

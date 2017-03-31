@@ -255,7 +255,7 @@ In this example, final status of job at the time of job execution and exception 
 |(5)
 |Output exception occurred for each step in a log. Fetch and implement ``StepExecution`` linked from ``JobExecution`` of argument. +
 Here, input data which caused the exception is fetched from ``ExecutionContext`` using a key called ``ERROR_ITEM``.
-For example set in ``ExecutionContext``, refer <<Ch06_ExceptionHandling.adoc#Ch06_ExceptionHandlingl_HowToUse_ExceptionHandling_Job, Exception handling of job units>>.
+For example set in ``ExecutionContext``, refer <<Ch06_ExceptionHandling.adoc#Ch06_ExceptionHandling_HowToUse_ExceptionHandling_Job, Exception handling of job units>>.
 
 |(6)
 |Set the listener implemented in (1), in ``<listeners>`` tag of Bean definition. +
