@@ -12,10 +12,14 @@ ifeval::["{docname}" == "single_index"]
 endif::[]
 
 // Define the names used in the whole document
+:SB: Spring Batch
+:SBI: Spring Batch Integeration
+
 :server5_fullname: TERASOLUNA Server Framework for Java (5.x)
 :server5_shortname: TERASOLUNA Server 5.x
 :server5_url: http://terasolunaorg.github.io/guideline/5.3.0.RELEASE/ja
 :server5_guide: TERASOLUNA Server 5.x Development Guideline
+
 :batch5_fullname: TERASOLUNA Batch Framework for Java (5.x)
 :batch5_shortname: TERASOLUNA Batch 5.x
-:server5_guide: TERASOLUNA Server 5.x Development Guideline
+:batch5_version: {revnumber-index}
